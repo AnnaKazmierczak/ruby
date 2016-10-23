@@ -1,0 +1,12 @@
+
+
+<h1>My Recipes</h1>
+<div>
+  <% for x in @recipes %>
+    <h2><%= x.name %></h2>
+   <p><%= x.ingredients %></p>
+   <p><%= x.description %></p>
+ <% end %>
+</div>
+
+

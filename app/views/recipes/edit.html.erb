@@ -1,0 +1,10 @@
+<%= form_for(@recipe) do |form| %>
+ <p><%= form.label("name") %></p>
+ <p><%= form.text_field("name") %></p>
+ <p><%= form.label("ingredients") %></p>
+ <p><%= form.text_field("ingredients") %></p>
+ <p><%= form.label("description") %></p>
+ <p><%= form.text_area("description") %></p>
+ <p><%= form.submit("Zapisz") %></p>
+<% end %>
+<p><%= link_to("Powrót", recipes_path) %></p>
